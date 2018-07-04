@@ -1,0 +1,48 @@
+*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+    Build fingerprint: 'generic_x86/google_sdk_x86/generic_x86:4.2.2/JB_MR1.1/3093082:eng/test-keys'
+    Revision: '0'
+    pid: 2616, tid: 2616, name: texturerenderer  >>> com.anative.texturerenderer <<<
+    signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 00000bd2
+06-09 11:17:18.147 1470-1485/system_process D/gralloc_ranchu: gralloc_unregister_buffer: exiting HostConnection (is buffer-handling thread)
+06-09 11:17:18.347 1129-1129/? I/DEBUG:     eax 00000bd2  ebx b70cfff4  ecx b88a83d0  edx b88a8340
+        esi 00000000  edi 00000001
+        xcs 00000073  xds 0000007b  xes 0000007b  xfs 00000000  xss 0000007b
+        eip b70a55c3  ebp b88a8340  esp bfa76980  flags 00010202
+    backtrace:
+        #00  pc 000355c3  /system/lib/libgui.so (android::SurfaceTextureClient::dequeueBuffer(ANativeWindowBuffer**, int*)+435)
+        #01  pc 00000bb6  <unknown>
+    stack:
+             bfa76940  00000000  
+             bfa76944  00000000  
+             bfa76948  00000000  
+             bfa7694c  00000000  
+             bfa76950  00000000  
+             bfa76954  00000000  
+             bfa76958  00000000  
+             bfa7695c  00000000  
+             bfa76960  00000000  
+             bfa76964  00000000  
+             bfa76968  00000000  
+             bfa7696c  00000000  
+             bfa76970  00000000  
+             bfa76974  00000000  
+             bfa76978  00000000  
+             bfa7697c  00000000  
+        #00  bfa76980  b8885a00  [heap]
+             ........  ........
+        #01  b88a8348  00000bb7  
+             b88a834c  00000bb8  
+             b88a8350  00000bb9  
+             b88a8354  00000bba  
+             b88a8358  00000bbb  
+             b88a835c  00000bbc  
+             b88a8360  00000bbd  
+             b88a8364  00000bbe  
+             b88a8368  00000bbf  
+             b88a836c  00000bc0  
+             b88a8370  00000bc1  
+             b88a8374  00000bc2  
+             b88a8378  00000bc3  
+             b88a837c  00000bc4  
+             b88a8380  00000bc5  
+             b88a8384  00000bc6  

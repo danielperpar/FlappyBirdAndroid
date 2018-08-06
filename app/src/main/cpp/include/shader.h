@@ -5,7 +5,6 @@
 #include <string>
 #include <GLES2/gl2.h>
 
-struct AAssetManager;
 class Shader final
 {
 public:

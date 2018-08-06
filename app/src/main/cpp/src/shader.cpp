@@ -1,9 +1,5 @@
 #include "shader.h"
-#include <fstream>
-#include <iostream>
-#include <sstream>
 #include <glm/gtc/type_ptr.hpp>
-#include <android/asset_manager.h>
 #include <cstdlib>
 #include <android/log.h>
 

@@ -69,11 +69,11 @@ Game.FactorGameOverScreenY:0.66
 Game.MaxDeadTimer: 1.0
 Game.FactorShakeTime: 0.2
 Game.ShakeValue:3
-Game.FlyAudioPath:resources/audio/sfx_wing.wav
-Game.CollissionAudioPath:resources/audio/sfx_hit.wav
-Game.DieAudioPath:resources/audio/sfx_die.wav
-Game.GUIMovementAudioPath:resources/audio/sfx_swooshing.wav
-Game.ScorePointAudioPath:resources/audio/sfx_point.wav
+Game.FlyAudioPath:resources/audio/sfx_wing.raw
+Game.CollissionAudioPath:resources/audio/sfx_hit.raw
+Game.DieAudioPath:resources/audio/sfx_die.raw
+Game.GUIMovementAudioPath:resources/audio/sfx_swooshing.raw
+Game.ScorePointAudioPath:resources/audio/sfx_point.raw
 GameLevel.ColumnVerticalSeparation:64
 GameLevel.MinVerticalPos:-104
 GameLevel.MaxVerticalPos:24

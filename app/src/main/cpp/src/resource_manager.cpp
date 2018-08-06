@@ -9,8 +9,6 @@
 #include <errno.h>
 #include "stb_image.h"
 
-#include <cstdlib>
-
 std::map<std::string, Shader> ResourceManager::mShaders;
 std::map<std::string, Texture2D> ResourceManager::mTextures;
 std::map<std::string, std::string> ResourceManager::mProperties;
@@ -29,8 +27,7 @@ void ResourceManager::LoadShader(AAssetManager *assetManager, const std::string 
     const std::string vertexShaderStr = ReadShaderFromFile(assetManager, vertexShaderPath);
     const std::string fragmentShaderStr = ReadShaderFromFile(assetManager, fragmentShaderPath);
 
-    Shader shader = Shader(vertexShaderStr, fragmentShaderStr);
-    mShaders.insert(std::map<std::string, Shader>::value_type(shaderName, shader));
+    Shader shader = Shader(vertexShaderStr, fragmentShaderStr);    mShaders.insert(std::map<std::string, Shader>::value_type(shaderName, shader));
 }
 
 void ResourceManager::LoadTextureFromFile(AAssetManager *assetManager, const std::string &textureName, const std::string &texturePath)

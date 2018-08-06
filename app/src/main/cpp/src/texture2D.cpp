@@ -1,9 +1,5 @@
 #include "texture2D.h"
 #include <GLES2/gl2.h>
-#include <android/asset_manager.h>
-#include "stb_image.h"
-#include <errno.h>
-#include <cstdlib>
 
 Texture2D::Texture2D(int width, int height, unsigned char *image) : mWrapS(GL_REPEAT), mWrapT(GL_REPEAT), mFilterMin(GL_LINEAR), mFilterMag(GL_LINEAR)
 {

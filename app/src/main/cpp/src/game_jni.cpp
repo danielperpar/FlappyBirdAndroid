@@ -1,12 +1,10 @@
 #include "game_jni.h"
 #include "game.h"
 #include <jni.h>
-#include <android/asset_manager.h>
 #include <android/asset_manager_jni.h>
 #include "resource_manager.h"
 #include "globals.h"
 #include "handle.h"
-#include "glm/glm.hpp"
 #include <string>
 
 #ifdef __cplusplus
